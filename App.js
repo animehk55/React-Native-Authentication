@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import { View} from 'react-native';
 // import firebase from 'firebase';
 import firebase from '@firebase/app';
 import '@firebase/auth';
