@@ -1,33 +1,32 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
+// import firebase from 'firebase';
+import firebase from '@firebase/app';
+import '@firebase/auth';
+import { Header } from './src/components/common';
+import LoginForm from './src/components/LoginForm';
 
-class App extends Component{
+
+class App extends Component {
+  componentWillMount() {
+    firebase.initializeApp({
+      apiKey: 'AIzaSyDpC3MY8oU6rveSP6DNVyWAfYLPRJIuajU',
+      authDomain: 'authenticationfirenative.firebaseapp.com',
+      databaseURL: 'https://authenticationfirenative.firebaseio.com',
+      projectId: 'authenticationfirenative',
+      storageBucket: 'authenticationfirenative.appspot.com',
+      messagingSenderId: '572832231141'
+    });
+    }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>hfsdh</Text>
+      <View>
+        <Header headerText="Authentication" />
+        <LoginForm />
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 export default App;
