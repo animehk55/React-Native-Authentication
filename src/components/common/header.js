@@ -23,9 +23,9 @@ const styles = {
         height: 60,
         padding: 20,
         width: '100%',
-        // shadowColor: 'red',
-        // shadowOffset: { width: 20, height: 2 },
-        // shadowOpacity: 0.2
+        shadowColor: 'red',
+        shadowOffset: { width: 20, height: 2 },
+        shadowOpacity: 0.2
     },
     textStyle:{
         fontSize: 40,

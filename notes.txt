@@ -1,0 +1,6 @@
+https://firebase.google.com/docs/auth/web/email-link-auth
+*************************************************************************************************************************
+npm install --save firebase
+********************************************************************************************************************
+Lifecycle methods are methods that are automatically invoked inside of our component, all we have to do is to define 
+the method and if we define it, it will automatically be called 
