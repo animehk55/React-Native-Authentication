@@ -1,37 +1,34 @@
 import React, {Component} from 'react';
 import { View} from 'react-native';
-import firebase from '@firebase/app'
-import '@firebase/auth';
-
 import { Header } from './src/components/common';
 import LoginForm from './src/components/LoginForm';
 
 
 class App extends Component {
 
-initializeFirebase() {
-  const firebase = require("firebase");
+// initializeFirebase() {
+//   const firebase = require("firebase");
 
-  // Initialize Firebase
-  var config = {
-      apiKey: 'AIzaSyDpC3MY8oU6rveSP6DNVyWAfYLPRJIuajU',
-      authDomain: 'authenticationfirenative.firebaseapp.com',
-      databaseURL: 'https://authenticationfirenative.firebaseio.com',
-      projectId: 'authenticationfirenative',
-      storageBucket: 'authenticationfirenative.appspot.com',
-      messagingSenderId: '572832231141'
-  };
-  firebase.initializeApp(config);
+//   // Initialize Firebase
+//   var config = {
+//       apiKey: 'AIzaSyDpC3MY8oU6rveSP6DNVyWAfYLPRJIuajU',
+//       authDomain: 'authenticationfirenative.firebaseapp.com',
+//       databaseURL: 'https://authenticationfirenative.firebaseio.com',
+//       projectId: 'authenticationfirenative',
+//       storageBucket: 'authenticationfirenative.appspot.com',
+//       messagingSenderId: '572832231141'
+//   };
+//   firebase.initializeApp(config);
 
-  //inicializando o firestore
-  const firestore = require("firebase/firestore");
-  db = firebase.firestore();
-  db.settings({ timestampsInSnapshots: true });
-}
+//   //inicializando o firestore
+//   const firestore = require("firebase/firestore");
+//   db = firebase.firestore();
+//   db.settings({ timestampsInSnapshots: true });
+// }
 
-componentWillMount() {
-  this.initializeFirebase();
-}
+// componentWillMount() {
+//   this.initializeFirebase();
+// }
   
   // componentWillMount() {
   //   // firebase.initializeApp({
