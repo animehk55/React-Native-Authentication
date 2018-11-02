@@ -4,3 +4,12 @@ npm install --save firebase
 ********************************************************************************************************************
 Lifecycle methods are methods that are automatically invoked inside of our component, all we have to do is to define 
 the method and if we define it, it will automatically be called 
+*********************************************************************************************************************
+Reducer: A function that returns some data.
+Action : An object that tells the reducer how to change its data.
+Store : An object that holds the application's data
+State: Data for our app to use.
+*******************************************************************************************************************
+react native :
+https://github.com/react-native-community
+https://facebook.github.io/react-native/blog/
