@@ -13,3 +13,6 @@ State: Data for our app to use.
 react native :
 https://github.com/react-native-community
 https://facebook.github.io/react-native/blog/
+
+http://reactnative.vn/react-native-remote-push-notification/?fbclid=IwAR1EOzY0BZTFNYnRBTA4MtLo2rMZ1_CJnWCzZQkIkZqxWbfzXv45B--aa-4
+
